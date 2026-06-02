@@ -43,6 +43,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 :root {
-    
+    --burger-line-color: rgb(5, 5, 5);
+    --title-color: #050505;
+    --text-black-color: #050505;
+    --primary-background-color: #fafaf9;
+    --secondary-text-color: #616160;
+    --hover-link-color: #8dbae7;
 }

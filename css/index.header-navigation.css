@@ -1,0 +1,113 @@
+.nav {
+    background-color: var(--primary-background-color);
+
+    .nav__outer-margin {
+        padding: 30px 24px;
+        display: flex;
+        align-items: center;
+        min-height: 100px;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: auto;
+
+        @media(min-width: 768px) {
+            padding: 30px 32px;
+        }
+
+        @media(min-width: 992px) {
+            padding: 30px 40px;
+            gap: 30px;
+        }
+
+        @media(min-width: 1280px) {
+            padding: 30px 15px;
+            gap: 30px;
+        }
+
+        .nav__author-container {
+            
+            .nav__author {
+                font-size: 26px;
+                font-family: "Unbounded", sans-serif;
+                font-weight: 500;
+                color: var(--title-color);
+
+                @media(min-width: 768px) {
+                    font-size: 32px;
+                }
+            }
+        }
+
+        .nav__list-container {
+            display: none;
+            padding: 0 20px;
+
+            @media(min-width: 992px) {
+                display: block;
+            }
+
+            .nav__list {
+                display: flex;
+                gap: 0 25px;
+                flex-wrap: wrap;
+
+                .nav__list-item {
+                    padding: 4px 0;
+
+                    .nav__list-link {
+                        font-size: 16px;
+                        font-family: "Overpass", sans-serif;
+                        font-weight: 700;
+                        text-decoration: underline;
+                        white-space: nowrap;
+
+                        &:hover {
+                            color: var(--hover-link-color);
+                        }
+                    }
+                }
+            }
+        }
+
+        .nav__info-container {
+            display: none;
+
+            @media(min-width: 992px) {
+                display: block;
+            }
+
+            .nav__info-point {
+                font-size: 12px;
+                font-family: "Overpass", sans-serif;
+                font-weight: 800;
+                text-transform: uppercase;
+                color: var(--title-color);
+
+                .nav__info-span {
+                    color: var(--secondary-text-color);
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .nav__burger-menu {
+            width: 24px;
+            height: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 12px 8px;
+            box-sizing: content-box;
+
+            @media(min-width: 992px) {
+                display: none;
+            }
+
+            .nav__burger-line {
+                height: 2px;
+                width: 100%;
+                background-color: var(--burger-line-color);
+            }
+        }
+    }
+}
