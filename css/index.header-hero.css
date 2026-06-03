@@ -1,0 +1,204 @@
+.hero {
+    background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url(../img/background.svg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+
+    .hero__wrapper {
+        padding: 80px 24px;
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        @media(min-width: 768px) {
+            padding: 105px 32px 80px;
+        }
+
+        @media(min-width: 992px) {
+            padding: 120px 40px 80px;
+        }
+
+        @media(min-width: 1280px) {
+            padding: 120px 15px 80px;
+        }
+
+        .hero__title-container {
+            display: flex;
+            height: 20px;
+            align-items: center;
+            gap: 10px;
+            justify-content: start;
+
+            .hero__title-icon {
+                max-width: 100%;
+                max-height: 100%;
+
+                .hero__title-icon-inner {
+                    fill: var(--svg-logo-color);
+                }
+            }
+
+            .hero__title {
+                font-size: 12px;
+                font-family: "Overpass", sans-serif;
+                font-weight: 800;
+                text-transform: uppercase;
+                color: var(--secondary-text-color);
+                height: fit-content;
+
+                @media(min-width: 768px) {
+                    font-size: 11px;
+                }
+
+                @media(min-width: 992px) {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .hero__subtitle-container {
+            
+            .hero__subtitle {
+                color: var(--title-color);
+                font-size: 48px;
+                font-family: "Unbounded", sans-serif;
+                font-weight: 400;
+                overflow-wrap: break-word;
+                line-height: 1.3;
+
+                @media(min-width: 768px) {
+                    font-size: 61px;
+                }
+
+                @media(min-width: 992px) {
+                    font-size: 68px;
+                }
+
+                .hero__subtitle-emphasised {
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .hero__experience-container {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+            @media(min-width: 768px) {
+                flex-direction: row;
+                gap: 30px;
+                align-items: center;
+            }
+
+            .hero__experience {
+
+                .hero__number {
+                    font-size: 34px;
+                    font-family: "Unbounded", sans-serif;
+                    font-weight: 500;
+                    
+
+                    @media(min-width: 768px) {
+                        font-size: 31px;
+                    }
+
+                    @media(min-width: 992px) {
+                        font-size: 46px;
+                        padding-left: 10px;
+                    }
+
+                    .hero__number-emphasised {
+                        color: var(--accent-color);
+                    }
+                }
+
+                .hero__experience-text {
+                    font-family: "Overpass", sans-serif;
+                    font-size: 12px;
+                    color: var(--secondary-text-color);
+                    font-weight: 800;
+                    text-transform: uppercase;
+
+                    @media(min-width: 768px) {
+                        text-align: center;
+                        font-size: 11px;
+                    }
+
+                    @media(min-width: 992px) {
+                        text-align: center;
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .hero__quote-container {
+                padding: 5px 0 5px 20px;
+                border-left: 1px solid var(--splitting-line-color);
+
+                .hero__quote {
+                    color: var(--third-text-color);
+                    font-size: 18px;
+                    font-family: "Overpass", sans-serif;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .hero__sources-container {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            margin-top: 50px;
+
+            @media(min-width: 768px) {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+
+            .hero__button {
+                color: var(--text-black-color);
+                font-size: 17px;
+                font-family: "Overpass", sans-serif;
+                font-weight: 600;
+                padding: 10px 30px;
+                width: fit-content;
+                border: 2px solid var(--border-color);
+                border-radius: 27px;
+                transition: all .2s ease-in;
+
+                &:hover {
+                    color: var(--hover-text-color);
+                    background-color: var(--background-black-color);
+                }
+            }
+
+            .hero__sources {
+                height: 36px;
+                display: flex;
+                gap: 20px;
+
+                .hero__source-link {
+                    height: 100%;
+                    display: block;
+                    flex-shrink: 0;
+
+                    .hero__source {
+                        max-height: 100%;
+                        max-width: 100%;
+                        width: 100%;
+                        transition: all .2s ease-in;
+
+                        &:hover {
+                            fill: var(--hover-link-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -48,7 +48,14 @@ table {
     --burger-line-color: rgb(5, 5, 5);
     --title-color: #050505;
     --text-black-color: #050505;
+    --background-black-color: #050505;
     --primary-background-color: #fafaf9;
     --secondary-text-color: #616160;
     --hover-link-color: #8dbae7;
+    --svg-logo-color: #8dbae7;
+    --accent-color: #8dbae7;
+    --third-text-color: #676767;
+    --splitting-line-color: rgba(5, 5, 5, 0.2);
+    --border-color: #050505;
+    --hover-text-color: #fafaf9;
 }
