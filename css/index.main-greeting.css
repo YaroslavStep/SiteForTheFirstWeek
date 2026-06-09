@@ -16,10 +16,12 @@
             padding: 80px 32px;
             flex-direction: row;
             gap: 60px;
+
         }
 
         @media(min-width: 992px) {
             padding: 80px 40px;
+            align-items: center;
         }
 
         @media(min-width: 1280px) {
